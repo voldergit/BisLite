@@ -231,14 +231,18 @@ a {
 }
 .works {
 }
-.works__title {
+.works__title,
+.testimonials__title,
+.clients__logo-title {
   padding: 25px 0px 5px 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
 }
-.works__title::before {
+.works__title::before,
+.testimonials__title::before,
+.clients__logo-title::before {
   position: absolute;
   top: 20px;
   left: 0;
@@ -303,4 +307,86 @@ a {
 }
 .slick-list {
   margin: 0 -15px;
+}
+.clients {
+  padding: 0 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clients__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials {
+  width: 440px;
+}
+.testimonials__title::before {
+  background-image: url(../images/testimonials/testi.svg);
+  width: 24px;
+  height: 23px;
+}
+.clients__logo-title::before {
+  background-image: url(../images/testimonials/client-logo.svg);
+  width: 24px;
+  height: 20px;
+}
+.testimonials p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #363636;
+}
+.testimonials span {
+  display: block;
+  padding-top: 30px;
+  font-weight: 700;
+  font-style: italic;
+}
+.testimonials__title {
+}
+.clients__logo {
+}
+.clients__logo-title {
+}
+.clients__logo-images {
+}
+.download {
+  margin-top: 40px;
+  padding: 30px 40px 30px 30px;
+  border: 1px solid #81e4ed;
+  background-color: #e8fcfe;
+  display: flex;
+  justify-content: space-between;
+}
+.download__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #363636;
+  max-width: 620px;
+}
+.download__btn a {
+  padding: 20px 20px 20px 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  border: 1px solid #2aacc8;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      #2aacc8 0%,
+      #60cede 100%,
+      #72dae6 100%,
+      #81e4ed 100%
+    ),
+    #2aacc8;
+
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 1px rgba(255, 255, 255, 0.1);
+}
+.download__btn a::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/testimonials/file.svg);
+  width: 28px;
+  height: 25px;
+  top: 16px;
+  left: 25px;
 }
